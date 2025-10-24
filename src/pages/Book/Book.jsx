@@ -6,10 +6,10 @@ const Book = ({ singleBook }) => {
     // const data = use(bookPromise)
     // console.log(singleBook)
 
-    const {bookName,bookId, author, image, rating, category, review, tags, yearOfPublishing, publisher} = singleBook
+    const {bookName, bookId, author, image, rating, category, review, tags, yearOfPublishing, publisher} = singleBook
 
     return (
-        <Link to={'/bookDetails/${bookId}'}>
+        <Link to={`/bookDetails/${bookId}`}>
         <div className="card bg-base-100 w-96 shadow-sm p-6 shadow">
             <figure className='p-4 bg-gray-100 w-2/3 mx-auto'>
                 <img className='h-[166px] '
